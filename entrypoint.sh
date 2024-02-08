@@ -20,12 +20,6 @@ asdf install python latest
 asdf install golang latest
 asdf install nodejs latest
 
-# Set global versions for asdf plugins
-asdf global terraform $(asdf list terraform | tail -1)
-asdf global python $(asdf list python | tail -1)
-asdf global golang $(asdf list golang | tail -1)
-asdf global nodejs $(asdf list nodejs | tail -1)
-
 # Set Java 8 as the default Java version
 update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 update-alternatives --set javac /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
